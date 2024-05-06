@@ -27,4 +27,4 @@ docker run -p 8080:8080 -e PROFILE=prd fiap-checkpoint3
 
 | Integrante | Github |
 | --- | --- |
-| Pedro Lamark (RM96258) | https://github.com/PedroLamark/fiap-checkpoint3 |
+| Pedro Lamark | https://github.com/PedroLamark/fiap-checkpoint3 |
