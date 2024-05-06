@@ -1,40 +1,30 @@
-# MVC RH
+# fiap-checkpoint2
 
-Aplicação MVC de Recursos Humanos para fins didáticos
-
-## Setup e Uso
-
-### Execução / Local dev
-
-#### Terminal
-
-```sh
-./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
+# Instruções Docker - Perfis
+## Executando imagem
+```
+docker run -p 8080:8080 fiap-checkpoint3
 ```
 
-#### [H2 Web UI](http://localhost:8080/h2-console)
+## Como executar no modo DEV
+```
+docker run -p 8080:8080 -e PROFILE=dev fiap-checkpoint3
+ou
+docker run -p 8080:8080 fiap-checkpoint3
+```
 
-> - *url*: jdbc:h2:mem:testdb
-> - *usuário*: sa
-> - *senha*: password
+## Como executar no modo stg
+```
+docker run -p 8080:8080 -e PROFILE=stg fiap-checkpoint3
+```
 
-![](assets/images/h2-console.png)
+## Como executar no modo prd
+```
+docker run -p 8080:8080 -e PROFILE=prd fiap-checkpoint3
+```
 
-## Arquitetura
+# Integrantes
 
-### MER
-
-![](assets/docs/src/mer/mer.svg)
-
-## Java
-
-> [Spring Initializr](https://start.spring.io/) - Criar aplicação conforme a configuração 
-
-### Spring Boot - Configuração
-
-![](assets/images/spring.png)
-
-## Referencias
-
- - https://spring.io/projects/spring-framework
- - https://plantuml.com/
+| Integrante | Github |
+| --- | --- |
+| Pedro Lamark | https://github.com/PedroLamark/fiap-checkpoint3 |
