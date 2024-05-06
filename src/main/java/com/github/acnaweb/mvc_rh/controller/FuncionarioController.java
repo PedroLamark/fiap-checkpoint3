@@ -17,4 +17,9 @@ public class FuncionarioController {
 	public String form() {
 		return "funcionario/form";
 	}
+	
+	@GetMapping("list_cargo")
+	public String list_cargo() {
+		return "funcionario/list_cargos";
+	}
 }
